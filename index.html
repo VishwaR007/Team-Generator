@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Team Generator</title>
+    <link rel="stylesheet" href="index.css" class="rel" />
+  </head>
+  <body>
+    <div class="mainContainerOne">
+      <h1 class="mainHeading">Team Generator</h1>
+
+      <form class="numberOfPlayersFormClass">
+        <div class="numberOfPlayersInputDiv">
+          <label
+            for="numberOfPlayersInputID"
+            class="numberOfPlayersInputLabelClass"
+            >Enter the number of players :
+          </label>
+          <input
+            type="number"
+            id="numberOfPlayersInputID"
+            class="numberOfPlayersInputClass"
+            placeholder="Number of Players"
+          />
+        </div>
+        <button type="submit" class="generateTablesClass">
+          Generate Tabel
+        </button>
+      </form>
+
+      <form id="teamForm">
+        <table>
+          <thead>
+            <tr>
+              <th class="firstTableHeading">Set 1 Players</th>
+              <th class="secondTableHeading">Set 2 Players</th>
+            </tr>
+          </thead>
+          <tbody id="playerRows">
+            <!-- Player rows will be dynamically added here -->
+          </tbody>
+        </table>
+        <button type="button" class="generateTeamsClass">Generate Teams</button>
+      </form>
+    </div>
+
+    <div id="teamsResult" class="teamsResultClass">
+      <!-- Teams result will be displayed here -->
+      <div class="teamOneFinal"></div>
+      <div class="teamTwoFinal"></div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>

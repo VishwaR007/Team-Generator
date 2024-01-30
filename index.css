@@ -1,0 +1,209 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.mainContainerOne {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-image: url(imgs/img4.jpg);
+  background-repeat: no-repeat;
+  /* background-size: 100%; */
+  background-size: cover;
+  min-height: 100vh;
+  min-width: 98vw;
+  height: fit-content;
+}
+
+/* Heading :  */
+.mainHeading {
+  padding-top: 35px;
+  color: black;
+}
+
+/* NUMBER OF PLAYERS INPUT :  */
+.numberOfPlayersFormClass {
+  height: 100px;
+}
+.numberOfPlayersInputDiv {
+}
+.numberOfPlayersInputLabelClass {
+  font-size: 20px;
+}
+.numberOfPlayersInputClass {
+  font-size: 15px;
+  padding: 5px;
+  margin: 20px 0px;
+}
+.generateTablesClass {
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+/* TABEL :  */
+#teamForm {
+  display: none;
+  padding-top: 50px;
+}
+table {
+  margin: 20px auto;
+  border-collapse: collapse;
+}
+table,
+th,
+td {
+  border: 4px solid rgb(50, 234, 17);
+}
+th,
+td {
+  font-size: 25px;
+}
+th {
+  padding: 10px;
+}
+table input {
+  font-size: 20px;
+  padding: 10px;
+}
+.generateTeamsClass {
+  font-size: 20px;
+  padding: 10px;
+  margin: 30px;
+  border-radius: 20px;
+  border: none;
+}
+
+/* Animation :  */
+@keyframes backgroundImgChanger {
+  0% {
+    background-image: url(/imgs/img1.jpg);
+  }
+  30% {
+    background-image: url(/imgs/img2.jpg);
+  }
+  50% {
+    background-image: url(/imgs/img3.jpg);
+  }
+  80% {
+    background-image: url(/imgs/img4.jpg);
+  }
+}
+
+/* Final Result :  */
+.teamsResultClass {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-image: url(imgs/img2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.teamOneFinal {
+}
+
+.teamTwoFinal {
+}
+
+.teamOneFinal,
+.teamTwoFinal {
+  background-color: rgba(255, 255, 255, 0.623);
+  border: 2px solid black;
+  box-shadow: -5px 5px 10px rgb(54, 53, 53);
+  min-width: 200px;
+}
+
+.teamsResultClass h2 {
+  padding: 20px;
+}
+
+.teamsResultClass h1 {
+  text-align: center;
+  color: rgb(255, 0, 0);
+}
+
+.teamOneCaptainBtnClass,
+.teamTwoCaptainBtnClass {
+  padding: 5px;
+  font-size: 20px;
+  border-radius: 20px;
+}
+
+.teamOneCaptainClass,
+.teamTwoCaptainClass {
+  text-align: center;
+  padding-top: 15px;
+}
+
+@media screen and (max-width: 800px) {
+  .mainContainerOne {
+    background-size: cover;
+    background-position: -150px 0px;
+  }
+
+  /* Heading :  */
+  .mainHeading {
+    padding-top: 80px;
+    color: black;
+  }
+
+  /* NUMBER OF PLAYERS INPUT :  */
+  .numberOfPlayersInputLabelClass {
+    font-size: 16px;
+  }
+  .numberOfPlayersInputClass {
+    font-size: 13px;
+    padding: 5px;
+    margin: 10px 0px;
+  }
+  .generateTablesClass {
+    font-size: 15px;
+    padding: 5px;
+  }
+
+  /* TABEL :  */
+  table,
+  th,
+  td {
+    border: 3px solid rgb(50, 234, 17);
+  }
+  th,
+  td {
+    font-size: 17px;
+  }
+  th {
+    padding: 7px;
+  }
+  table input {
+    font-size: 15px;
+    padding: 5px;
+  }
+  .generateTeamsClass {
+    font-size: 15px;
+    padding: 7px;
+  }
+
+  /* Final Result :  */
+  .teamOneFinal,
+  .teamTwoFinal {
+    border: 2px solid black;
+    box-shadow: -5px 5px 10px rgb(54, 53, 53);
+    min-width: 150px;
+  }
+
+  .teamsResultClass h2 {
+    padding: 10px;
+  }
+
+  .teamOneCaptainBtnClass,
+  .teamTwoCaptainBtnClass {
+    padding: 5px;
+    font-size: 15px;
+  }
+
+  .teamOneCaptainClass,
+  .teamTwoCaptainClass {
+    padding-top: 10px;
+  }
+}
